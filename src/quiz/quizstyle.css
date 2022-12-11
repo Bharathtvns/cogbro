@@ -12,7 +12,9 @@ body {
   }
   
   body {
-    background-color:#000000;
+    background-image: url("./hello.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,21 +22,29 @@ body {
   }
   
   .app {
-    background-color: #3556cb;
-    width: 450px;
+       
+
+    width: 600px;
     min-height: 200px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 42px 0px rgba(63, 59, 59, 0.75);
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
   }
   
   .score-section {
     display: flex;
+    flex-direction: column;
+    width: 90%;
     font-size: 24px;
     align-items: center;
+  }
+
+  text1{
+    margin: 200px;
   }
   
   /* QUESTION/TIMER/LEFT SECTION */
@@ -53,6 +63,7 @@ body {
   
   .question-text {
     margin-bottom: 12px;
+    font-size: 20px;
   }
   
   
@@ -61,33 +72,39 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 10px;
+
   }
   
   button {
-    width: 100%;
+    width: 90%;
     font-size: 16px;
-    color: #ffffff;
-    background-color: #2d4dc3;
-    border-radius: 15px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
     display: flex;
-    padding: 5px;
+    padding: 10px;
     justify-content: flex-start;
     border: 2px solid #ffffff;
     cursor: pointer;
   }
 
   
-  .correct {
-    background-color: #2f922f;
-  }
-  
-  .incorrect {
-    background-color: #ff3333;
-  }
   
   button:hover {
-    background-color: #555e7d;
+    background-color: #252627;
+    color: white  ;
+    transition: 500ms;
+    
+  }
+  button:active {
+    background-color: #ffffff;
+    color: #000000  ; 
+    
   }
     
   button svg {
